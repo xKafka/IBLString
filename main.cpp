@@ -85,17 +85,22 @@ String<T> operator+(const String<T> &left, const T(&right)[N])
     return result += String<T>{ right };
 }
 
+
+
+
+
+
 int main() {
 
-    String<wchar_t> str(L"kokot");
+    String<wchar_t> str(L"string1");
 
-    String<wchar_t> str1(L"kokot");
+    String<wchar_t> str1(L"str1");
 
     String<wchar_t> str3 = L"fdf";
 
     std::wcout << str + str1;
 
-    std::wcout << str + L"kokot";
+    std::wcout << str + L"kololo";
 
     std::wcout << str3;
 
